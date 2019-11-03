@@ -8,7 +8,7 @@
 </head>
 <body>
 	<%	// 세션에 값 설정하기
-		session.setAttribute("mySessionName", "chororong"); //"key_변수명","변수의 값" 
+		session.setAttribute("mySessionName", "chororong"); //"key_변수명","value_변수의 값" 
 		session.setAttribute("myNum", 12345);
 	
 	%>
