@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<style>
+table {
+	width: 900px;
+}
+
+th {
+	background: lightgrey;
+	width: 150px;
+}
+
+td {
+	padding-left: 5px;
+	height: 30px;
+}
+
+select {
+	width: 80px;
+	height: 20px;
+}
+</style>
+
+
+</head>
+<body>
+	
+		<font color="red" style="font-size: 15px;"><strong>(주)
+				예담직업전문학교 일반회원가입</strong></font> <br>
+		<ul style="font-size: 12px;">
+			<li><strong>이름, 생년월일, 성별, 이메일</strong>은 본인확인 및 교육확인을 위해 사용됩니다. <br>신분증에
+				기재된 정보와 하나의 메일로 통일해서 적어주십시오.</li>
+			<br>
+			<li><strong>이름, 생년월일, 성별, 이메일</strong>과 훈련정보를 대조해 교육중이나 수료생의 경우
+				<br>마이페이지의 정보변경에서 바로 수료/수강생회원으로 전환이 가능합니다.</li>
+			<br>
+			<li>회원가입후 마이페이지에서 회원탈퇴가 가능하며, 온라인상에서 정보는 보관되지 않습니다.</li>
+		</ul>
+		
+		<form>
+		<table border="1" bordercolor="grey" rules="all">
+			<tr>
+				<th>이름<font color="red">*</font></th>
+				<td><input type="text" name="name" size="20"></td>
+			</tr>
+
+			<tr>
+				<th>아이디<font color="red">*</font></th>
+				<td><input type="text" name="id" size="20"> <strong>ID는
+						영문자와 숫자만 사용할 수 있습니다.</strong></td>
+			</tr>
+
+			<tr>
+				<th>비밀번호<font color="red">*</font></th>
+				<td><input type="password" name="pwd" size="20"></td>
+			</tr>
+
+			<tr>
+				<th>비밀번호확인<font color="red">*</font></th>
+				<td><input type="password" name="pwdchek" size="20"></td>
+			</tr>
+
+			<tr>
+				<th>생년월일<font color="red">*</font></th>
+				<td><select name="birth_year">
+						<option value="년도">년도</option>
+						<option value="1991">1991</option>
+						<option value="1992">1992</option>
+						<option value="1993">1993</option>
+						<option value="1994">1994</option>
+						<option value="1995">1995</option>
+						<option value="1996">1996</option>
+				</select> <select name="birth_month">
+						<option value="월">월</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="03">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+				</select> <select name="birth_day">
+						<option value="일">일</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+				</select> <font color="lightgrey"> * 신분증에 기재된 성명, 생년월일, 성별을 입력해 주세요.</font></td>
+			</tr>
+
+			<tr>
+				<th>성별<font color="red">*</font></th>
+				<td><input type="radio" name="gender" value="man" id="man">
+					<label for="man" id="man">남</label> <input type="radio"
+					name="gender" value="woman" id="woman"> <label for="woman"
+					id="woman">여</label></td>
+			</tr>
+
+			<tr>
+				<th>이메일<font color="red">*</font></th>
+				<td><input type="text" name="email" size="50"> <font
+					color="lightgrey"> * 본인확인 및 아이디/비번찾기에 사용됩니다.</font></td>
+			</tr>
+
+			<tr>
+				<th>전화번호<font color="navy">*</font></th>
+				<td><select name="phone_num_1">
+						<option value="선택">선택</option>
+						<option value="010">010</option>
+						<option value="011">011</option>
+						<option value="016">016</option>
+				</select> - <input type="text" name="phone_num_2" size="5"> - <input
+					type="text" name="phone_num_3" size="5"> <font color="navy">
+						<strong>* 전화 또는 휴대폰번호중 택1은 필수사항입니다.</strong>
+				</font></td>
+			</tr>
+
+			<tr>
+				<th>휴대폰번호<font color="navy">*</font></th>
+				<td><select name="phone_num_1">
+						<option value="선택">선택</option>
+						<option value="053">053</option>
+						<option value="054">054</option>
+						<option value="055">055</option>
+				</select> - <input type="text" name="phone_num_2" size="5"> - <input
+					type="text" name="phone_num_3" size="5"></td>
+			</tr>
+
+			<tr>
+				<th>우편번호<font color="red">*</font></th>
+				<td><input type="text" name="zipcode_1" size="10"> - <input
+					type="text" name="zipcode_2" size="10"> <input
+					type="button" name="searchZip" value="우편번호 찾기"></td>
+			</tr>
+
+			<tr>
+				<th>주소<font color="red">*</font></th>
+				<td><input type="text" name="address" size="80"></td>
+			</tr>
+
+			<tr>
+				<th>상세주소<font color="red">*</font></th>
+				<td><input type="text" name="address" size="80"></td>
+			</tr>
+		</table>
+		<table border="0">
+			<tr>
+				<td style="text-align: center;"><input type="submit"
+					name="sign_up" value="일반회원가입"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

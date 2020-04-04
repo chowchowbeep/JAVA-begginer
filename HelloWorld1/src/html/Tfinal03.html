@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>구구단</title>
+
+</head>
+<body>
+	<script>
+		document.write("<table border='2' rules='all'>")
+		var i, j;
+		for (i = 1; i <= 9; i++) {
+			document.write("<tr>")
+			document.write("<th width='40' style='border-right:2px solid black;' >" + i + "단" + "</th>")
+			for (j = 1; j <= 9; j++) {
+				document.write("<td width='60' style='padding-left:5px;'>"+i + "*" + j + "=" + (i * j)+"</td>")
+			}
+			document.write("</tr>")
+		}
+		document.write("</table>")
+	</script>
+</body>
+</html>
